@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Funclub Jany Maláčové</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        table, th, td {
+          border:3px solid gray;
+        }
+        .pozadi{
+            position: relative;
+            margin: 0px;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+        .pozadi img{
+            width:100%;
+            height: 100%;
+            object-fit:cover;
+            filter: blur(5px);
+        }
+        .pozadi h1{
+            position: absolute;
+            left: 10%;
+            top: 40px;
+            font-family: arial;
+            font-size: 40px;
+        }
+        .obsah{
+            margin: 0 auto;
+            padding: 15px;
+            max-width: 1000px;
+        }
+        .menu{
+            height: 50px;
+            padding-top: 10px;
+            width: 100%;
+            background-color:dodgerblue;
+        }
+        .menu a {
+            color: white;
+            
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 8px;
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+            font-family: arial;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="pozadi"><img src="data:image/jpeg;base64,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">
+        <h1>Funclub Jany Maláčové</h1>
+    </div>    
+    <div class="menu">
+        <a href="druha.html">druha</a>
+        <a href="druha.html">druha</a>
+    </div>
+    <div class="obsah">
+        <h2>Vaše dotazy, "kde na to chceme vzít," mě opravdu unavují a připadají mi plytké</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus ac leo pretium faucibus. Ut tempus purus at
+        lorem. Praesent vitae arcu tempor neque lacinia pretium. Duis pulvinar. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Donec ipsum massa, ullamcorper in, auctor
+        et, scelerisque sed, est. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Nunc dapibus tortor vel
+        mi dapibus sollicitudin. Sed ac dolor sit amet purus malesuada congue. Temporibus autem quibusdam et aut
+        officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+        recusandae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris
+        metus. Fusce tellus. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam dui sem, fermentum vitae, sagittis
+        id, malesuada in, quam.
+    </p>
+    <img width="500" src="https://ct24.ceskatelevize.cz/sites/default/files/styles/node-article_horizontal/public/images/2145487-malacova.jpg?itok=debi3w4e" alt="heh">
+    <br><br>
+    <table>
+        <tr><th colspan="2">Naši oblíbenci z oblíbeného seriálu Hustá dvojka</th></tr>
+        <tr><th><img src="https://1gr.cz/fotky/lidovky/19/041/maxi/ELE7a886e_124522_12828985_1.jpg" width="300" alt="maláčová"></th><th><img width="300" src="https://1884403144.rsc.cdn77.org/foto/daniel-krejcik-matej-stropnicky/Zml0LWluLzEyMDB4OTk5OS9maWx0ZXJzOnF1YWxpdHkoODUpOm5vX3Vwc2NhbGUoKS9pbWc/3728623.jpg?v=0&st=rlyWR6JdujU9MbxwjHAWZ-o8lq0yLCEla1_oD0_fLqs&ts=1600812000&e=0" alt="stropnický"></th></tr>
+    </table>
+    
+    </div>
+    
+</body>
+
+</html>
