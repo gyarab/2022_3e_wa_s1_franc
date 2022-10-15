@@ -1,59 +1,77 @@
-
 @font-face {
     font-family: NewsreaderBold;
     src: url(fonts/Newsreader-Bold.ttf);
 }
+
 @font-face {
     font-family: NewsreaderMedium;
     src: url(fonts/Newsreader_24pt-Medium.ttf);
 }
+
 @font-face {
     font-family: EBGaramond;
     src: url(fonts/EBGaramond-Regular.ttf);
 }
+
 body {
     margin: 0px;
 }
 
-table{
+table {
+    width: 500px;
     border-collapse: collapse;
-    font-size: 0.9em;
+    font-size: 1.2em;
     font-family: sans-serif;
     min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    overflow: hidden;
 }
-td{
-    padding: 12px 15px;
+
+th{
+    padding: 0px;
+}
+
+th img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+tr:last-of-type {
+    border-bottom: 3px solid orangered;
 }
 
 thead tr {
-    background-color: orangered;
     color: #ffffff;
-    text-align: left;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    text-align: center;
+    height: 3em;
+    background-color: orangered;
 }
 
-h1{
+h1 {
     font-family: NewsreaderBold;
 }
-h2{
+
+h2 {
     font-family: NewsreaderBold;
     font-size: 3vw;
     line-height: 1.1em;
 }
-h3{
+
+h3 {
     font-family: NewsreaderMedium;
-    color:#2b2b2b;
+    color: #2b2b2b;
     font-size: 2vw;
     line-height: 1em;
 }
-p{
+
+p {
     font-family: EBGaramond;
     font-size: 1.3vw;
 }
+
 .pozadi {
     position: relative;
     margin: 0px;
@@ -67,7 +85,7 @@ p{
     height: 100%;
     object-fit: cover;
     filter: brightness(70%) blur(5px);
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .pozadi h1 {
@@ -108,7 +126,8 @@ p{
     background-color: yellow;
     color: orangered;
 }
-.patka{
+
+.patka {
     position: relative;
     height: 300px;
     padding-top: 80px;
@@ -116,23 +135,27 @@ p{
     background-color: orangered;
     color: rgb(167, 61, 22);
 }
-.patka h1{
+
+.patka h1 {
     position: absolute;
     font-family: NewsreaderMedium;
     margin: 0px;
     width: 50%;
     font-size: 4.5vw;
 }
-@media screen and (max-width: 980px){
-    .menu a{
+
+@media screen and (max-width: 980px) {
+    .menu a {
         font-size: 15px;
     }
-    .patka{
+
+    .patka {
         height: 200px;
     }
 }
-@media screen and (max-width: 780px){
-    .menu a{
+
+@media screen and (max-width: 780px) {
+    .menu a {
         top: -5px;
         text-align: left;
         font-size: 23px;
@@ -141,7 +164,8 @@ p{
         float: top;
         margin: 8px;
     }
-    .menu{
+
+    .menu {
         height: 120px;
     }
 }
