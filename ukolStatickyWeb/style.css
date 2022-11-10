@@ -29,7 +29,7 @@ table {
     overflow: hidden;
 }
 
-th{
+th {
     padding: 0px;
 }
 
@@ -56,20 +56,31 @@ h1 {
 
 h2 {
     font-family: NewsreaderBold;
-    font-size: 3vw;
-    line-height: 1.1em;
+    font-size: max(3vw, 28px);
+    line-height: max(1.1em, 26px);
 }
 
 h3 {
     font-family: NewsreaderMedium;
     color: #2b2b2b;
-    font-size: 2vw;
+    font-size: max(2vw, 23px);
     line-height: 1em;
 }
 
 p {
     font-family: EBGaramond;
-    font-size: 1.3vw;
+    font-size: max(1.3vw, 20px);
+    
+}
+
+p:first-of-type::first-letter {
+    float: left;
+    font-family: Georgia;
+    font-size: max(3.5vw, 47px);
+    line-height: max(2.9vw, 40px);
+    padding-top: 6px;
+    padding-right: 8px;
+    padding-left: 7px;
 }
 
 .pozadi {
