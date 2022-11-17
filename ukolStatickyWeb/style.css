@@ -15,40 +15,11 @@
 body {
     margin: 0px;
 }
-
-/*table {
-    width: 500px;
-    border-collapse: collapse;
-    font-size: 1.2em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    overflow: hidden;
+th{
+    font-size: max(1.8vw, 25px);
+    font-family: NewsreaderBold;
+    font-weight: 600;
 }
-
-th {
-    padding: 0px;
-}
-*/
-td img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/*
-tr:last-of-type {
-    border-bottom: 3px solid orangered;
-}
-
-thead tr {
-    color: #ffffff;
-    text-align: center;
-    height: 3em;
-    background-color: orangered;
-}*/
 .tdObr{
     margin: 18px;
     width: 15vw;
