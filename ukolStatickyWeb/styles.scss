@@ -23,6 +23,13 @@ $bigTrigger: 1000px;
     src: url(fonts/EBGaramond-Regular.ttf);
 }
 
+@function calcFontSize($k: 1) {
+    $minSize: 23px;
+    $maxSize: 32px;
+    $calculatedSize: 2.2vw;
+    @return calc( $k * max( $minSize , min($maxSize, $calculatedSize + $minSize/2)));
+  }
+
 body {
     margin: 0px;
 }
@@ -49,7 +56,7 @@ h1 {
 h2 {
     margin: 20px 0px;
     font-family: NewsreaderBold;
-    font-size: max(3vw, 28px);
+    font-size: calcFontSize(1.8);
     line-height: max(1.1em, 26px);
 }
 
@@ -57,14 +64,14 @@ h3 {
     margin: 30px 0px 15px 0px;
     font-family: NewsreaderBold;
     color: #2b2b2b;
-    font-size: max(2vw, 28px);
+    font-size: calcFontSize(1.4);
     line-height: 1em;
     font-weight: 600px;
 }
 
 p {
     font-family: EBGaramond;
-    font-size: max(1.3vw, 22px);
+    font-size: calcFontSize();
 
     &:first-of-type::first-letter {
         float: left;

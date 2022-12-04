@@ -4,6 +4,123 @@
 - shift + alt = množení kurzoru v ose y
 - ctrl + h = nahradit
 
+# Git
+
+## Generování klíčů
+
+Poižít email použitý v Githubu
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+Poté zadat název klíče. Vzniknou dva soubory, ten s příponou .pub je veřejný klíč.
+
+Dále je nutné klíče přidat do seznamu klíčů (ssh-agent)
+
+Test ssh-agent:
+
+```bash
+ eval "$(ssh-agent -s)"
+```
+
+Přidání klíče do seznamu:
+
+```bash
+ssh-add ~/.ssh/prvateSSH
+```
+
+Test propojení ke gitu pomocí SSH klíčů:
+
+```bash
+ssh -vT git@github.com
+```
+
+## Git repozitář
+
+### používání bash
+
+pwd -> Print current working directory
+
+~ -> C:
+
+cd folderName -> change directory
+
+ls -> show what's inside current folder
+
+rm fileName -> remove file
+
+rm -r directoryName -> remove folder
+
+mkdir name -> create folder
+
+cp fileName direcotry -> Copy file to selected folder
+
+cat fileaName -> print selected file
+
+### Nastavení git
+
+```bash
+git config --global user.name “[firstname lastname]”
+git config --global user.email “[valid-email]”
+```
+
+Zobrazení stavu projektu:
+
+```bash
+git status
+```
+
+### Inicializace nového git
+
+Spustíme v kořenové složce projektu
+
+```bash
+git init
+```
+
+Přidání souborů do git
+
+```bash
+specifické:
+git add fileName
+všechny:
+git add -A
+git add .
+```
+
+Odebrání ze seznamu zahrnutých souborů:
+
+```bash
+git reset fileName
+```
+
+### Git project
+
+Commit
+
+```bash
+git commit -m description
+```
+
+### Download project from url
+
+```bash
+git clone url
+```
+
+Set new origin:
+
+```bash
+git remote add origin url
+```
+
+Change existing origin:
+
+```bash
+git remote set-url origin url
+```
+
 # CSS
 
 ## Import

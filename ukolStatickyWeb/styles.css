@@ -36,7 +36,7 @@ h1 {
 h2 {
   margin: 20px 0px;
   font-family: NewsreaderBold;
-  font-size: max(3vw, 28px);
+  font-size: calc(1.8 * max(23px, min(32px, 2.2vw + 11.5px)));
   line-height: max(1.1em, 26px);
 }
 
@@ -44,14 +44,14 @@ h3 {
   margin: 30px 0px 15px 0px;
   font-family: NewsreaderBold;
   color: #2b2b2b;
-  font-size: max(2vw, 28px);
+  font-size: calc(1.4 * max(23px, min(32px, 2.2vw + 11.5px)));
   line-height: 1em;
   font-weight: 600px;
 }
 
 p {
   font-family: EBGaramond;
-  font-size: max(1.3vw, 22px);
+  font-size: calc(1 * max(23px, min(32px, 2.2vw + 11.5px)));
 }
 p:first-of-type::first-letter {
   float: left;
