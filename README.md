@@ -456,3 +456,19 @@ Padding between columns.
   </div>
 </div>
 ```
+
+# Formuláře
+
+HTTP methods:
+
+- GET (nejde poslat obrázek)
+- POST
+- PUT
+- Delete
+- Options
+
+CKEditor - ritch text editor lepší textarea
+label s parametrem for, slouží k označení vstupních tagů, do for dáme id tagu, ke kterému patří.
+Poté můžeme klikat i na label, aby jsme vybrali chckbox
+
+Radio button - musí mít stejný parametr name, label se spojuje přes id - každý jiný
