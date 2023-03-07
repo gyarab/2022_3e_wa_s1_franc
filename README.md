@@ -71,6 +71,12 @@ Zobrazení stavu projektu:
 git status
 ```
 
+### Make changes in .gitignore file.
+
+Run git rm -r --cached .
+Run git add .
+git commit -m "Commit message"
+
 ### Inicializace nového git
 
 Spustíme v kořenové složce projektu

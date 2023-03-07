@@ -33,6 +33,9 @@ for tr in tableData:
             val = prePrice
         m = m+1
     print(shor+"\t"+'{0: >#010.4f}'. format(float(val))+"\t"+nam)
+short.append("EUR")
+name.append("Euro")
+price.append(1)
 
 # -------------     User inputs
 zMena = ""
